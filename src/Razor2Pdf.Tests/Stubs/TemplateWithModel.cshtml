@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/stub.css"  rel="stylesheet" />
+</head>
+<body>
+    <h1>Template with model sample</h1>
+
+    <span class="hide">WebSettings.UserStyleSheet not defined!</span><br />
+
+    <b>IntData: @Model.IntData</b><br />
+    <b>StringData: @Model.StringData</b><br />
+    <b>DateData: @Model.DateData.ToString("dd/MM/yyyy")</b><br />
+
+    @foreach (var item in Model.ArrayData)
+    {
+        <b>Item: @item</b><br />
+    }
+
+    <img src="https://butt.holdings/hold-onto-your-butts.gif" />
+</body>
+</html>

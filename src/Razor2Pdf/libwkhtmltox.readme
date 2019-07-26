@@ -1,0 +1,4 @@
+﻿The files libwkhtmltox.dll (win), libwkhtmltox.so (linux) and libwkhtmltox.dll (OSX) from native library libwkhtmltox
+need to be on project root because they need to be copied to runtime root directory and so been available to dynamic linking.
+
+More details at: https://github.com/rdvojmoc/DinkToPdf#install

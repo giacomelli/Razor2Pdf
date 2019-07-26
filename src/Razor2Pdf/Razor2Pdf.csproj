@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="razorlight" Version="2.0.0-beta1" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+  </ItemGroup>
+
+  <!-- NuGet Package -->
+  <PropertyGroup>
+    <PackageId>Razor2Pdf</PackageId>
+    <PackageDescription>Razor2Pdf is a easy-to-use, cross-platform library to build PDF files from Razor template files.</PackageDescription>
+    <Authors>Diego Giacomelli</Authors>
+    <Owners>g1acomell1</Owners>
+    <PackageLicenseUrl>https://github.com/giacomelli/Razor2Pdf/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/giacomelli/Razor2Pdf</PackageProjectUrl>
+    <PackageReleaseNotes>See changes at https://github.com/giacomelli/Razor2Pdf.</PackageReleaseNotes>
+    <PackageTags>razor pdf</PackageTags>
+  </PropertyGroup>
+  <!-- NuGet Package -->
+
+  <ItemGroup>
+    <None Update="libwkhtmltox.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="libwkhtmltox.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="libwkhtmltox.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
